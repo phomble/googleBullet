@@ -1,0 +1,160 @@
+{
+	"id": "com.demo.bullet",
+	"version": "1.0.0",
+	"name": "Bullet",
+	"description": "Bullet Chart",
+	"newInstancePrefix": "Bullet",
+	"icon": "https://phomble.github.io/googleBullet/bullet.png",
+	"vendor": "I521939",
+	"eula": "",
+	"license": "",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-demo-bullet",
+			"url": "https://phomble.github.io/googleBullet/bullet.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+
+	], 
+	
+	"properties": {
+		"width": {
+			"type": "integer",
+			"default": 700
+		},
+		"height": {
+			"type": "integer",
+			"default": 550
+		},
+		"color": {
+			"type": "string",
+			"description": "label",
+			"default": "bullet One color"
+		},
+		"label1": {
+			"type": "string",
+			"description": "label",
+			"default": "bullet One"
+		},
+		"valueBudget1": {
+			"type": "integer",
+			"description": "value",
+			"default": 0
+		},
+		"valueUsed1": {
+			"type": "integer",
+			"description": "value",
+			"default": 0
+		},
+		"label2": {
+			"type": "string",
+			"description": "label",
+			"default": "bullet Two"
+		},
+		"valueBudget2": {
+			"type": "integer",
+			"description": "value",
+			"default": 0
+		},
+		"valueUsed2": {
+			"type": "integer",
+			"description": "value",
+			"default": 0
+		},
+		"label3": {
+			"type": "string",
+			"description": "label",
+			"default": "bullet Three"
+		},
+		"valueBudget3": {
+			"type": "integer",
+			"description": "value",
+			"default": 0
+		},
+		"valueUsed3": {
+			"type": "integer",
+			"description": "value",
+			"default": 0
+		}
+	},
+	"methods": {
+		"setBullet1": {
+			"description": "Sets the Bullet value.",
+			"parameters": [
+				{
+					"name": "newLabel1",
+					"type": "string",
+					"description": "The new label value."
+				},
+			
+				{
+					"name": "newBudgetValue1",
+					"type": "integer",
+					"description": "The new Budgetvalue."
+				},
+				{
+					"name": "newUsedValue1",
+					"type": "integer",
+					"description": "The new Usedvalue."
+				}
+			],
+			"body": "this.valueBudget1 = newBudgetValue1; this.valueUsed1 = newUsedValue1; this.label1 = newLabel1;"
+		
+		},
+		"setBullet2": {
+			"description": "Sets the Bullet value.",
+			"parameters": [
+				{
+					"name": "newLabel2",
+					"type": "string",
+					"description": "The new label value."
+				},
+			
+				{
+					"name": "newBudgetValue2",
+					"type": "integer",
+					"description": "The new Budgetvalue."
+				},
+				{
+					"name": "newUsedValue2",
+					"type": "integer",
+					"description": "The new Usedvalue."
+				}
+			],
+			"body": "this.valueBudget2 = newBudgetValue2; this.valueUsed2 = newUsedValue2; this.label2 = newLabel2;"
+		
+		},
+		"setBullet3": {
+			"description": "Sets the Bullet value.",
+			"parameters": [
+				{
+					"name": "newLabel3",
+					"type": "string",
+					"description": "The new label value."
+				},
+			
+				{
+					"name": "newBudgetValue3",
+					"type": "integer",
+					"description": "The new Budgetvalue."
+				},
+				{
+					"name": "newUsedValue3",
+					"type": "integer",
+					"description": "The new Usedvalue."
+				}
+			],
+			"body": "this.valueBudget3 = newBudgetValue3; this.valueUsed3 = newUsedValue3; this.label3 = newLabel3;"
+		
+		}
+		
+	},
+	
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks the bullet chart."
+		}
+	}
+}
