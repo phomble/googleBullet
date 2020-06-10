@@ -417,14 +417,7 @@
 					height: 500,
 
 					series:{1:{targetAxisIndex:1}}, hAxes:{1:{title:'Losses', textStyle:{color: 'red'}}},
-					hAxes: {
-						 // Nothing specified for axis 0
-						
-						  title:'Losses',
-						  textStyle: {
-							color: 'red'
-						  
-						}, // Axis 1
+
 					
 				
 					hAxis: {
