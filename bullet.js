@@ -415,8 +415,15 @@
 					legend: 'none',
 					/* this adjust the height for the chart  */
 					height: 500,
-					
-			/*
+					hAxes: {
+						 // Nothing specified for axis 0
+						
+						  title:'Losses',
+						  textStyle: {
+							color: 'red'
+						  
+						}, // Axis 1
+			
 				
 					hAxis: {
 						minValue: 0,
@@ -433,10 +440,12 @@
 					vAxis: {
 						minValue: 0,
 						title: 'Account',
+
 						textStyle: {fontSize: 14}
 						
 					},
-					*/
+					
+          
 					
 					colors: ['#05cdff'],
 					tooltip: {isHtml: false},
