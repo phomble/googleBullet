@@ -431,7 +431,7 @@
 						legend: 'none',
 						/* this adjust the height for the chart  */
 						height: 500,
-					/*
+					
 						hAxis: {
 							minValue: 0,
 							format: 'short',
@@ -448,7 +448,7 @@
 							title: 'Account',
 							textStyle: {fontSize: 14}
 						},
-						*/
+						
 						colors: ['#05cdff'],
 						tooltip: {isHtml: false},
 						
