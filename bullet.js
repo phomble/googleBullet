@@ -410,54 +410,51 @@
 				]);
 			
 				var options = {
-				/*	fontName: 'Calibri', height 550,w 530*/
-					Title: 'Total Budget',
-					legend: 'Hello',
-					/* this adjust the height for the chart  */
-					height: 500,
-
-					hAxis: {
-						minValue: 0,
-						format: 'short',
-						title: ' $ USD',
-						side: 'top',
-						textStyle: {
-							fontSize: 16,
-							color: '#000000'
+					/*	fontName: 'Calibri', height 550,w 530*/
+						Title: 'Total Budget',
+						legend: 'none',
+						/* this adjust the height for the chart  */
+						height: 500,
+					
+						hAxis: {
+							minValue: 0,
+							format: 'short',
+							
+							title: ' $ USD',
+							side: 'top',
+							textStyle: {
+								fontSize: 16,
+								color: '#000000'
+							},
 						},
-					},
-					vAxis: {
-						minValue: 0,
-						title: 'Account',
-						textStyle: {fontSize: 14}
+						vAxis: {
+							minValue: 0,
+							title: 'Account',
+							textStyle: {fontSize: 14}
+						},
+						colors: ['#05cdff'],
+						tooltip: {isHtml: false},
 						
-					},
+						chartArea: {left:120},
+						width: '100%',
+						format: 'short',
+						diff: { 
+							newData: { widthFactor: 0.6 },
+							oldData: { opacity: 1, color: '#D9D9D9',
+								tooltip:{
+									prefix:'Budget',
+									
+										} 
+								}, 
+							newData: { opacity: 1, widthFactor: .6, 
+								tooltip:{
+									prefix:'Consumed',
+									
+										}
+									 } 
+								 }
+						};
 					
-          
-					
-					colors: ['#05cdff'],
-					tooltip: {isHtml: false},
-					
-					chartArea: {left:120},
-					width: '100%',
-					format: 'short',
-					diff: { 
-						newData: { widthFactor: 0.6 },
-						oldData: { opacity: 1, color: '#D9D9D9',
-							tooltip:{
-								prefix:'Budget',
-								
-									} 
-							}, 
-						newData: { opacity: 1, widthFactor: .6, 
-							tooltip:{
-								prefix:'Consumed',
-								
-									}
-								 } 
-						 	}
-					};
-				
 				
 				var colChartBefore = new google.visualization.ColumnChart(ctx);
 				var colChartAfter = new google.visualization.ColumnChart(ctx);
