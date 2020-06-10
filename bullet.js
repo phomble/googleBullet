@@ -412,19 +412,13 @@
 				var options = {
 				/*	fontName: 'Calibri', height 550,w 530*/
 					Title: 'Total Budget',
-					legend: 'none',
+					legend: 'Hello',
 					/* this adjust the height for the chart  */
 					height: 500,
 
-					series:{1:{targetAxisIndex:1}}, hAxes:{1:{title:'Losses', textStyle:{color: 'red'}}},
-
-					
-				
 					hAxis: {
 						minValue: 0,
 						format: 'short',
-						
-						
 						title: ' $ USD',
 						side: 'top',
 						textStyle: {
@@ -435,7 +429,6 @@
 					vAxis: {
 						minValue: 0,
 						title: 'Account',
-
 						textStyle: {fontSize: 14}
 						
 					},
