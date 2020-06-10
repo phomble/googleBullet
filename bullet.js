@@ -432,6 +432,14 @@
 						title: 'Account',
 						textStyle: {fontSize: 14}
 					},
+					axes: {
+						x: {
+							 0: { side: ‘top’, label: ‘my x axis’}
+						},
+						y: {
+							 0: { side: ‘left’, label: ‘my y axis’}
+						}
+					},
 					colors: ['#05cdff'],
 					tooltip: {isHtml: false},
 					
