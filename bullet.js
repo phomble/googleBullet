@@ -411,6 +411,21 @@
 			
 				var options = {
 					/*	fontName: 'Calibri', height 550,w 530*/
+					chart: {
+						title: 'Nearby galaxies',
+						subtitle: 'distance on the left, brightness on the right'
+					  },
+					  bars: 'horizontal', // Required for Material Bar Charts.
+					  series: {
+						0: { axis: 'distance' }, // Bind series 0 to an axis named 'distance'.
+						1: { axis: 'brightness' } // Bind series 1 to an axis named 'brightness'.
+					  },
+					  axes: {
+						x: {
+						  distance: {label: 'parsecs'}, // Bottom x-axis.
+						  brightness: {side: 'top', label: 'apparent magnitude'} // Top x-axis.
+						}
+					  },
 						Title: 'Total Budget',
 						legend: 'none',
 						/* this adjust the height for the chart  */
