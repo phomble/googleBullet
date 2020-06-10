@@ -414,11 +414,14 @@
 					Title: 'Total Budget',
 					legend: 'none',
 					/* this adjust the height for the chart  */
-        			height: 500,
+					height: 500,
+					
+			/*
 				
 					hAxis: {
 						minValue: 0,
 						format: 'short',
+						
 						
 						title: ' $ USD',
 						side: 'top',
@@ -431,15 +434,10 @@
 						minValue: 0,
 						title: 'Account',
 						textStyle: {fontSize: 14}
+						
 					},
-					axes: {
-						x: {
-							 0: { side: ‘top’, label: ‘my x axis’}
-						},
-						y: {
-							 0: { side: ‘left’, label: ‘my y axis’}
-						}
-					},
+					*/
+					
 					colors: ['#05cdff'],
 					tooltip: {isHtml: false},
 					
