@@ -1,7 +1,7 @@
 {
 	"id": "com.demo.bullet",
 	"version": "1.0.0",
-	"name": "googleBullet",
+	"name": "Google Bullet",
 	"description": "Google Bullet Chart",
 	"newInstancePrefix": "Bullet",
 	"icon": "https://phomble.github.io/googleBullet/bullet.png",
